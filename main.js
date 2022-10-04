@@ -3,7 +3,7 @@ canvas = document.getElementById('myCanvas');
 ctx = canvas.getContext("2d");
 //Give specific height and width to the car image
 greencar_width = 75;
-greencar_height = 00;
+greencar_height = 100;
 background_image = "parkingLot.jpg";
 greencar_image = "car2.png";
 
@@ -81,7 +81,7 @@ function up()
 function down()
 {
 	//Define function to move the car downward
-	if(rover_y <=500){
+	if(greencar_y <=500){
 		greencar_y = greencar_y + 10;
 		console.log("When down arrow is pressed,  x="+ greencar_x+" y="+greencar_y);
 		uploadBackground();
@@ -92,7 +92,7 @@ function down()
 function left()
 {
 	//Define function to move the car left side
-	if(rover_x >=0){
+	if(greencar_x >=0){
 		greencar_x = greencar_x - 10;
 		console.log("When left arrow is pressed,  x="+ greencar_x+" y="+greencar_y);
 		uploadBackground();
@@ -103,7 +103,7 @@ function left()
 function right()
 {
 	//Define function to move the car right side
-	if(rover_x <=700){
+	if(greencar_x <=700){
 		greencar_x = greencar_x + 10;
 		console.log("When right arrow is pressed,  x="+ greencar_x+" y="+greencar_y);
 		uploadBackground();
